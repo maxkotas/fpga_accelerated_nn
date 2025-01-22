@@ -9,17 +9,23 @@ Welcome to the **FPGA Accelerated Neural Network** project! This repository demo
     fpga_accelerated_nn/
     ├── data/                    # Dataset and testbench data
     │   ├── mnist_data.npz       # Preprocessed MNIST dataset
-    │   ├── input_features.dat   # Testbench input features
-    │   ├── output_predictions.dat # Testbench expected outputs
     ├── src/                     # Python scripts for core functionality
-    │   ├── prep_data.py         # Data loading and preprocessing (MNIST)
-    │   ├── train_model.py       # Model building and training with QKeras
-    │   ├── convert_model.py     # Convert trained QKeras model to HLS4ML format
-    │   ├── hls_synthesis.py     # Run Vivado HLS synthesis for FPGA deployment
+    │   ├── prep_data.py         # Prepare the MNIST dataset
+    │   ├── train_model.py       # Train a quantized QKeras model
+    │   ├── convert_model.py     # Convert QKeras model to HLS
+    │   ├── hls_synthesis.py     # Perform HLS synthesis
     ├── models/                  # Saved models
-    │   ├── mnist_model_qkeras.h5 # Trained quantized model
-    ├── hls4ml_model_qkeras/     # HLS4ML model output directory
-    ├── README.md                # Project documentation (you’re reading it right now!)
+    │   ├── mnist_model_qkeras.h5 # Trained QKeras model
+    ├── hls4ml_model_qkeras/     # HLS4ML generated project directory
+    │   ├── firmware/            # Generated HLS C++ code
+    │   ├── tb_data/             # Testbench data files
+    │   ├── hls4ml_config.yml    # HLS4ML configuration
+    │   ├── myproject_test.cpp   # Testbench C++ implementation
+    │   ├── vivado_synth.tcl     # Vivado synthesis script
+    ├── README.md                # This README file!
+    ├── LICENSE                  # License for the project
+    ├── environment.yml          # Conda environment configuration
+    └── .gitignore               # Git ignore rules
 
 ---
 
