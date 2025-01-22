@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment
+.env
+.venv
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# FPGA/HLS
+*.log
+*.jou
+*.rpt
+*.str
+hls4ml_model_qkeras/**/syn/
+hls4ml_model_qkeras/**/impl/
+hls4ml_model_qkeras/**/.autopilot/
+hls4ml_model_qkeras/**/.debug/
+hls4ml_model_qkeras/**/csim/
+hls4ml_model_qkeras/**/*.tcl
+!hls4ml_model_qkeras/**/build_prj.tcl
+!hls4ml_model_qkeras/**/project.tcl
+!hls4ml_model_qkeras/**/vivado_synth.tcl
+
+# Large files
+*.h5
+*.npz
+*.hdf5
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 

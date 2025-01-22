@@ -1,0 +1,85 @@
+Backend: Vivado
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    flatten:
+      Precision:
+        result: auto
+      Trace: false
+    pool1:
+      Precision:
+        result: auto
+      Trace: false
+    qconv1:
+      Precision:
+        bias: fixed<4,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,3,TRN,WRAP,0>
+      Trace: false
+    qconv1_alpha:
+      Precision: auto
+    qconv1_input:
+      Precision:
+        result: auto
+      Trace: false
+    qconv1_linear:
+      Precision:
+        result: auto
+      Trace: false
+    qdense1:
+      Precision:
+        bias: fixed<4,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,3,TRN,WRAP,0>
+      Trace: false
+    qdense1_alpha:
+      Precision: auto
+    qdense1_linear:
+      Precision:
+        result: auto
+      Trace: false
+    qdense2:
+      Precision:
+        bias: fixed<4,3,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,3,TRN,WRAP,0>
+      Trace: false
+    qdense2_alpha:
+      Precision: auto
+    qdense2_linear:
+      Precision:
+        result: auto
+      Trace: false
+    qrelu1:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+      Trace: false
+    qrelu2:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+      Trace: false
+    softmax:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'hls4ml_model_qkeras/keras_model.keras'
+OutputDir: hls4ml_model_qkeras
+OutputPredictions: null
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: 762b6234
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  WriteTar: false
+  WriteWeightsTxt: true
