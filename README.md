@@ -128,23 +128,23 @@ The neural network model consists of:
 
 ## 📈 Training Results
 
-Model Summary:
-_________________________
-Layer (type)               Output Shape              Param #   
-================================================================
-qconv1 (QConv2D)           (None, 26, 26, 16)        160
-qrelu1 (QActivation)       (None, 26, 26, 16)        0
-pool1 (MaxPooling2D)       (None, 13, 13, 16)        0
-flatten (Flatten)          (None, 2704)              0
-qdense1 (QDense)           (None, 64)                173120
-qrelu2 (QActivation)       (None, 64)                0
-qdense2 (QDense)           (None, 10)                650
-softmax (Activation)       (None, 10)                0
-================================================================
-Total params: 173,930
-Trainable params: 173,930
-Non-trainable params: 0
-_________________________
+    Model Summary:
+    _________________________
+    Layer (type)               Output Shape              Param #   
+    ================================================================
+    qconv1 (QConv2D)           (None, 26, 26, 16)        160
+    qrelu1 (QActivation)       (None, 26, 26, 16)        0
+    pool1 (MaxPooling2D)       (None, 13, 13, 16)        0
+    flatten (Flatten)          (None, 2704)              0
+    qdense1 (QDense)           (None, 64)                173120
+    qrelu2 (QActivation)       (None, 64)                0
+    qdense2 (QDense)           (None, 10)                650
+    softmax (Activation)       (None, 10)                0
+    ================================================================
+    Total params: 173,930
+    Trainable params: 173,930
+    Non-trainable params: 0
+    _________________________
 
 
 ---
