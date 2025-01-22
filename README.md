@@ -6,6 +6,7 @@ Welcome to the **FPGA Accelerated Neural Network** project! This repository demo
 
 ## 📂 Project Structure
 
+`bash
 fpga_accelerated_nn/
 ├── data/                    # Dataset and testbench data
 │   ├── mnist_data.npz       # Preprocessed MNIST dataset
