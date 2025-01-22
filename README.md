@@ -128,7 +128,6 @@ The neural network model consists of:
 
 ## 📈 Training Results
 
-`plaintext
 Model Summary:
 _________________________
 Layer (type)               Output Shape              Param #   
