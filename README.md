@@ -33,7 +33,7 @@ fpga_accelerated_nn/
 ├── LICENSE                  # License for the project
 ├── environment.yml          # Conda environment configuration
 └── .gitignore               # Git ignore rules
-
+`
 ---
 
 ## 🛠️ Installation
