@@ -6,7 +6,6 @@ Welcome to the **FPGA Accelerated Neural Network** project! This repository demo
 
 ## 📂 Project Structure
 
-    `bash
     fpga_accelerated_nn/
     ├── data/                    # Dataset and testbench data
     │   ├── mnist_data.npz       # Preprocessed MNIST dataset
@@ -33,7 +32,6 @@ Welcome to the **FPGA Accelerated Neural Network** project! This repository demo
     ├── LICENSE                  # License for the project
     ├── environment.yml          # Conda environment configuration
     └── .gitignore               # Git ignore rules
-    `
 ---
 
 ## 🛠️ Installation
