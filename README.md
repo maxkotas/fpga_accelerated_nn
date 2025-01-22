@@ -6,34 +6,34 @@ Welcome to the **FPGA Accelerated Neural Network** project! This repository demo
 
 ## 📂 Project Structure
 
-`bash
-fpga_accelerated_nn/
-├── data/                    # Dataset and testbench data
-│   ├── mnist_data.npz       # Preprocessed MNIST dataset
-│   ├── input_features.dat   # Testbench input features
-│   ├── output_predictions.dat # Testbench expected outputs
-├── src/                     # Python scripts for core functionality
-│   ├── prep_data.py         # Prepare the MNIST dataset
-│   ├── train_model.py       # Train a quantized QKeras model
-│   ├── convert_model.py     # Convert QKeras model to HLS
-│   ├── hls_synthesis.py     # Perform HLS synthesis
-├── models/                  # Saved models
-│   ├── mnist_model_qkeras.h5 # Trained QKeras model
-├── hls4ml_model_qkeras/     # HLS4ML generated project directory
-│   ├── firmware/            # Generated HLS C++ code
-│   ├── tb_data/             # Testbench data files
-│   ├── hls4ml_config.yml    # HLS4ML configuration
-│   ├── myproject_test.cpp   # Testbench C++ implementation
-│   ├── vivado_synth.tcl     # Vivado synthesis script
-├── tests/                   # Unit tests for Python scripts
-│   ├── test_preprocessing.py # Tests for prep_data.py
-│   ├── test_training.py      # Tests for train_model.py
-│   ├── test_conversion.py    # Tests for convert_model.py
-├── README.md                # This README file!
-├── LICENSE                  # License for the project
-├── environment.yml          # Conda environment configuration
-└── .gitignore               # Git ignore rules
-`
+    `bash
+    fpga_accelerated_nn/
+    ├── data/                    # Dataset and testbench data
+    │   ├── mnist_data.npz       # Preprocessed MNIST dataset
+    │   ├── input_features.dat   # Testbench input features
+    │   ├── output_predictions.dat # Testbench expected outputs
+    ├── src/                     # Python scripts for core functionality
+    │   ├── prep_data.py         # Prepare the MNIST dataset
+    │   ├── train_model.py       # Train a quantized QKeras model
+    │   ├── convert_model.py     # Convert QKeras model to HLS
+    │   ├── hls_synthesis.py     # Perform HLS synthesis
+    ├── models/                  # Saved models
+    │   ├── mnist_model_qkeras.h5 # Trained QKeras model
+    ├── hls4ml_model_qkeras/     # HLS4ML generated project directory
+    │   ├── firmware/            # Generated HLS C++ code
+    │   ├── tb_data/             # Testbench data files
+    │   ├── hls4ml_config.yml    # HLS4ML configuration
+    │   ├── myproject_test.cpp   # Testbench C++ implementation
+    │   ├── vivado_synth.tcl     # Vivado synthesis script
+    ├── tests/                   # Unit tests for Python scripts
+    │   ├── test_preprocessing.py # Tests for prep_data.py
+    │   ├── test_training.py      # Tests for train_model.py
+    │   ├── test_conversion.py    # Tests for convert_model.py
+    ├── README.md                # This README file!
+    ├── LICENSE                  # License for the project
+    ├── environment.yml          # Conda environment configuration
+    └── .gitignore               # Git ignore rules
+    `
 ---
 
 ## 🛠️ Installation
